@@ -9,14 +9,16 @@ var express = require('express'),
 mongoose.Promise = global.Promise;
 var options = { useNewUrlParser: true };       
  
-//var mongodbUri = 'mongodb://<user>:<password>@<db-url>:35413/<db-name>';
-var mongodbUri = 'mongodb://productdev:productdev1@ds249503.mlab.com:49503/product-dev'
+var mongodbUri = 'mongodb://<user>:<password>@<db-url>:35413/<db-name>';
+
 mongoose.connect(mongodbUri, options);
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
+app.use(function(req, res) {
+    res.status(404).send({url: req.originalUrl + ' not found'})
+  });
 var routesproductRoutes = require('./routes/productRoutes'); //importing route
 routesproductRoutes(app); //register the route
 

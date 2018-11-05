@@ -1,9 +1,9 @@
 
 # Template for node api use Express and Mongoose well documented by swagger-ui
 
-## 
+## Just match the connection string mongodb://<user>:<password>@<db-url>:35413/<db-name> to your DB and play the app
 
-### Create new product
+### Test 1 : Create new product
 
 var request = require("request");
 
@@ -27,7 +27,7 @@ request(options, function (error, response, body) {
   console.log(body);
 });
 
-### Get all products
+### Test 2 : Get all products
 
 var request = require("request");
 
