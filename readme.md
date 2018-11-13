@@ -2,6 +2,7 @@
 # Template for node api use Express and Mongoose well documented by swagger-ui
 
 ## Just match the connection string : mongodb://user:password@db-url:35413/db-name , to your DB and play the app.
+## https://www.codementor.io/olatundegaruba/5-steps-to-authenticating-node-js-with-jwt-7ahb5dmyr
 
 ### Test 1 : Create new product
 
