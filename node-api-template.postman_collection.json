@@ -1,0 +1,138 @@
+{
+	"id": "6d1b945f-aaa3-146a-46b6-083eaeee813f",
+	"name": "node-api-template",
+	"description": "",
+	"order": [
+		"39d5837e-1566-4418-2906-83ef5734af12",
+		"c27403ec-d596-07ce-dbf6-0622a611d35c",
+		"2694f96e-1a23-c004-fd58-aa869c686f6e",
+		"8b4b1260-088d-a1ec-4016-cee80d97fafb"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1542064822147,
+	"owner": "385762",
+	"public": false,
+	"requests": [
+		{
+			"id": "2694f96e-1a23-c004-fd58-aa869c686f6e",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6d1b945f-aaa3-146a-46b6-083eaeee813f",
+			"data": null,
+			"dataMode": "params",
+			"name": "get products no auth",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542065764783,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "39d5837e-1566-4418-2906-83ef5734af12",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/auth/sign_in",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1542065834098,
+			"name": "sign in user",
+			"description": "",
+			"collectionId": "6d1b945f-aaa3-146a-46b6-083eaeee813f",
+			"responses": [],
+			"rawModeData": "{\r\n\t\"user\": \"user1\",\r\n\t\"hashPassword\": \"$2b$10$4dxPgyFXkvpu.Da5hsefw.ySF5z6pdvfAakL1zD0ykDE9pTZf2/my\"\r\n}"
+		},
+		{
+			"id": "8b4b1260-088d-a1ec-4016-cee80d97fafb",
+			"headers": "Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlcjIiLCJfaWQiOiI1YmVhMTFmYTM4YjNkMTNmY2MwYmI0NDIiLCJpYXQiOjE1NDIwNjY3MzZ9.KUZfKEFU_txvljXiiuIzfzhGoJrudMsrOcpOyIvMP2A\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidXNlcjIiLCJfaWQiOiI1YmVhMTFmYTM4YjNkMTNmY2MwYmI0NDIiLCJpYXQiOjE1NDIwNjY3MzZ9.KUZfKEFU_txvljXiiuIzfzhGoJrudMsrOcpOyIvMP2A",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "6d1b945f-aaa3-146a-46b6-083eaeee813f",
+			"data": null,
+			"dataMode": "params",
+			"name": "get products auth",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542067927858,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c27403ec-d596-07ce-dbf6-0622a611d35c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/auth/register",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "6d1b945f-aaa3-146a-46b6-083eaeee813f",
+			"data": [
+				{
+					"key": "user",
+					"value": "user1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "register user",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542065758423,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
